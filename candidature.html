@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Candidature - Wide Model Agency</title>
+    <link rel="stylesheet" href="style2.css">
+  
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="IMG-20240430-WA0001.jpg" alt="Logo" class="logo">
+            <span class="tagline">WALK MODEL ARTISTRY</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="candidature.html" class="active">CANDIDATURE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="candidature-section">
+            <div class="container">
+                <h1>🚀 Devenez Mannequin chez Wide Model Agency</h1>
+                <p>Remplissez ce formulaire pour postuler. Une photo est obligatoire.</p>
+
+                <!-- Formulaire qui enverra les données à PHP -->
+                <form action="backend/candidature.php" method="POST" enctype="multipart/form-data">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nom *</label>
+                            <input type="text" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Prénom *</label>
+                            <input type="text" name="prenom" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Téléphone</label>
+                            <input type="tel" name="telephone">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Âge *</label>
+                            <input type="number" name="age" min="14" max="40" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Ville</label>
+                            <input type="text" name="ville">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Taille (cm)</label>
+                        <input type="number" step="0.1" name="taille_cm" placeholder="ex: 170">
+                    </div>
+
+                    <!-- CHAMP POUR LA PHOTO -->
+                    <div class="form-group">
+                        <label>Photo du visage et du corps (obligatoire) *</label>
+                        <input type="file" name="photo" accept="image/*" required>
+                        <small>Formats acceptés : JPG, PNG, WEBP. Taille max : 5 Mo.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Motivation *</label>
+                        <textarea name="motivation" rows="5" placeholder="Pourquoi voulez-vous devenir mannequin ?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">📤 Envoyer ma candidature</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">&copy; 2025 Wide Model Agency - Jacmel, Haïti</div>
+    </footer>
+<script src="script2.js"></script>
+</body>
+</html>

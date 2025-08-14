@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Mannequins - Wide Model Agency</title>
+    <meta name="description" content="Découvrez tous nos mannequins professionnels. Hommes, femmes, enfants - Wide Model Agency représente les meilleurs talents.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="ei_1745345351734-removebg-preview (2).png">
+    <style>
+        .models-header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('IMG-20250802-WA0086.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 0 80px;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--primary-color);
+            background: transparent;
+            color: var(--primary-color);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .model-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.5rem;
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .model-detail {
+            text-align: center;
+        }
+        
+        .model-detail strong {
+            display: block;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <img src="file_00000000ea1461fd9bc2afbd4a1d3da3.png" alt="Wide Model Agency Logo">
+                <div class="logo-text">
+                    <h1>Wide Model Agency</h1>
+                    <p>WALK MODEL ARTISTRY</p>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="mannequins.html" class="active">MODÈLES</a></li>
+                <li><a href="services.html">L'ÉCOLE</a></li>
+                <li><a href="a-propos.html">RÉDACTION</a></li>
+                <li><a href="casting.html">CANDIDATURE</a></li>
+                <li><a href="contact.html" class="btn btn-primary">CONTACT</a></li>
+            </ul>
+            
+            <button class="nav-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Header de la page -->
+    <section class="models-header">
+        <div class="container">
+            <h1 style="font-size: 3rem; font-weight: 300; margin-bottom: 1rem;">Nos Modèles</h1>
+            <p style="font-size: 1.2rem; color: #ccc;">Découvrez nos mannequins professionnels</p>
+        </div>
+    </section>
+
+    <!-- Section Filtres -->
+    <section class="section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="femme">Femmes</button>
+                <button class="filter-btn" data-filter="homme">Hommes</button>
+                <button class="filter-btn" data-filter="enfant">Enfants</button>
+                <button class="filter-btn" data-filter="senior">Seniors</button>
+            </div>
+
+            <!-- Galerie des mannequins -->
+            <div class="models-grid">
+                <!-- Femmes -->
+                <div class="model-card" data-category="femme">
+                    <div class="model-image">
+                        <img src="IMG-20250802-WA0026~2.jpg" alt="Daphcaline">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Daphcaline</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>20 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>175 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>36</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-category="femme">
+                    <div class="model-image">
+                        <img src="IMG-20250802-WA0044~2.jpg" alt="Renette">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Renette</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>19 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>173 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>34</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-category="femme">
+                    <div class="model-image">
+                        <img src="IMG-20250802-WA0084.jpg" alt="Ismeralda">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Ismeralda</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>17 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>172 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>38</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-category="femme">
+                    <div class="model-image">
+                        <img src="IMG-20250802-WA0046.jpg" alt="Emanuella">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Emanuella</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>24 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>175 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>36</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Santiago</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-category="femme">
+                    <div class="model-image">
+                        <img src="IMG-20250802-WA0007.jpg" alt="Mirna">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Mirna</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>19 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>173 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>36</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hommes -->
+                <div class="model-card" data-category="homme">
+                    <div class="model-image">
+                        <img src="IMG-20250802-WA0020~2.jpg" alt="Carlo">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Carlo</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>25 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>170 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>18</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-category="homme">
+                    <div class="model-image">
+                        <img src="IMG-20250802-WA0014~3.jpg" alt="Isaac">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Isaac</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>23 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>178 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>46</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-category="homme">
+                    <div class="model-image">
+                        <img src="IMG-20250802-WA0018.jpg" alt="Ricardi">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Ricardi</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>18 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>176 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>20</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enfants -->
+                <div class="model-card" data-category="enfant">
+                    <div class="model-image">
+                        <img src="IMG-20250420-WA0010~2.jpg" alt="Rose">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Rose</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>13 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>171 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>6-8 ans</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-category="enfant">
+                    <div class="model-image">
+                        <img src="IMG_3723_transcpr.jpg" alt="Louidji">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Louidji</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>25 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>175 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>38</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seniors -->
+                <div class="model-card" data-category="senior">
+                    <div class="model-image">
+                        <img src="IMG_3510_transcpr.jpg" alt="Wideline">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Wideline</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>23 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>173 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>42</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-category="senior">
+                    <div class="model-image">
+                        <img src="Screenshot_20250405-071733.jpg" alt="Ricardo">
+                    </div>
+                    <div class="model-info">
+                        <h3 class="model-name">Ricardo</h3>
+                        <div class="model-stats">
+                            <div class="model-detail">
+                                <strong>25 ans</strong>
+                                <span>Âge</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>175 cm</strong>
+                                <span>Taille</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>52</strong>
+                                <span>Confection</span>
+                            </div>
+                            <div class="model-detail">
+                                <strong>Jacmel</strong>
+                                <span>Ville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact CTA -->
+    <section class="section" style="background-color: var(--bg-light);">
+        <div class="container text-center">
+            <h2 class="section-title">Vous souhaitez rejoindre notre agence ?</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-light);">Nous sommes toujours à la recherche de nouveaux talents. Envoyez-nous votre candidature !</p>
+            <a href="casting.html" class="btn btn-primary" style="margin-right: 1rem;">Postuler maintenant</a>
+            <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="IMG-20240430-WA0001.jpg" alt="Wide Model Agency Logo">
+                    <h3>Wide Model</h3>
+                    <p class="hero-subtitle">WALK MODEL ARTISTRY</p>
+                    <p>Wide Model Agency - Agence De Mannequins Jacmelienne(Haiti) Et Internationale</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>LÉGAL</h4>
+                    <ul>
+                        <li><a href="#">C.G.V</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>LIENS UTILES</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                        <li><a href="casting.html">Candidature</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Wide Model Agency - All Rights Are Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Activer la lightbox pour cette page
+        document.addEventListener('DOMContentLoaded', function() {
+            initLightbox();
+        });
+    </script>
+</body>
+</html>
